@@ -11,7 +11,7 @@ function addZero(data) {
   }
 }
 
-let countDownDate = new Date("Aug 17, 2025 00:00:00").getTime();
+let countDownDate = new Date("Sep 9, 2025 9:00:00").getTime();
 
 let x = setInterval(() => {
   let now = new Date().getTime();
