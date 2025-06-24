@@ -44,15 +44,34 @@ body {
 /* Layout & Section Styles */
 #openner {
   height: 100vh;
+  width: 100vw;
   position: fixed;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.436) 0%, rgba(0, 0, 0, 0.522) 100%), url(https://res.cloudinary.com/dzsvjyxrf/image/upload/v1750518778/bg-home_fuh1yy.jpg);
+  top: 0;
+  left: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* jaga agar isi bertumpuk ke bawah */
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.436) 0%,
+      rgba(0, 0, 0, 0.522) 100%
+    ),
+    url(https://res.cloudinary.com/dzsvjyxrf/image/upload/v1750518778/bg-home_fuh1yy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100vw;
-  z-index: 12;
   transition: 0.5s;
 }
+
+#openner h1,
+#openner h4,
+#openner h2,
+#openner p {
+  text-shadow: 1px 4px rgba(0, 0, 0, 0.6);
+}
+
 
 #jumbotron .container-fluid {
   height: 100vh;
@@ -99,12 +118,6 @@ body {
   background: var(--dark-bg);
 }
 
-#protokol-kesehatan {
-  margin-top: 0.8rem;
-  background: var(--light-bg);
-  padding-bottom: 2rem;
-  color: #cc9933; /* Consider using a variable if this color is used elsewhere */
-}
 
 #pesan {
   background: var(--dark-bg);
